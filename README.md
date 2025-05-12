@@ -20,10 +20,11 @@ All results should be able reproduced using standard Python packages on any Unix
 
 ```text
 .
-├── pkl/           # Preprocessed data (23 pickle files)
-├── plots/         # Output directory for generated plots (40+ PDFs)
-├── scripts/       # Individual scripts, each generates one figure (e.g., "# Fig. 13(c)")
-├── reproduce_all.sh   # Master script to reproduce all figures
+├── maps/          # Driving trajectories used in experiments (per city)
+├── pkl/           # Preprocessed measurement data (.pkl format)
+├── plots/         # Output directory for generated figures (PDFs)
+├── scripts/       # Indvidual scripts for reproduce one result at a time
+├── reproduce_all.sh  # Master script to reproduce all results at once
 └── README.md      # This file
 ```
 
@@ -33,7 +34,7 @@ All results should be able reproduced using standard Python packages on any Unix
 
 - OS: Linux or macOS (Unix-based)
 - Python: 3.6 or newer
-- Disk space: < 25 MB
+- Disk space: < 45 MB
 - No GPU, sudo privileges, or special hardware required
 
 ---
@@ -83,6 +84,9 @@ This will:
 > Total runtime: ~5 minutes  
 > Output: figures in PDF format that are similar to what we used in the paper
 
+> 💡 **Note:** If you're not comfortable running third-party scripts directly on your system,  
+> feel free to run this artifact inside a minimal container or virtual environment.  
+> The artifact has no privileged access requirements, and uses only `numpy` and `matplotlib`.
 ---
 
 ## Expected Output

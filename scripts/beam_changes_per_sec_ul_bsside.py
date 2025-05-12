@@ -1,3 +1,4 @@
+# Fig. 4(b)
 import numpy as np
 import pickle
 import matplotlib.pyplot as plt

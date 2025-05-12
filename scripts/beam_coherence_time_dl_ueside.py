@@ -1,4 +1,4 @@
-# Fig. 5(b)
+# Fig. 5(c)
 import numpy as np
 import pickle
 import matplotlib.pyplot as plt

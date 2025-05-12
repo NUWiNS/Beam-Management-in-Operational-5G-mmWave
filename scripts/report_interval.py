@@ -1,3 +1,4 @@
+# Fig. 7(a)(b)
 import pickle
 import matplotlib.pyplot as plt
 import numpy as np

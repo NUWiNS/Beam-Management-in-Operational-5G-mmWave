@@ -71,8 +71,8 @@ pip install numpy matplotlib
 ### Step 3: Run All Scripts
 
 ```bash
-chmod +x reproduce.sh
-./reproduce.sh
+chmod +x reproduce_all.sh
+./reproduce_all.sh
 ```
 
 This will:

@@ -1,3 +1,4 @@
+# Fig. 6(a)(b)(c)
 import pickle
 import matplotlib.pyplot as plt
 import numpy as np
@@ -133,6 +134,6 @@ def plot_all_graphs(save_flag, show_flag):
             plot_box(group_24, group_32, group_36, group_144, graph_type, link_type, save_flag, show_flag)
 
 if __name__ == "__main__":
-    save_flag = 0
-    show_flag = 1
+    save_flag = 1
+    show_flag = 0
     plot_all_graphs(save_flag, show_flag)

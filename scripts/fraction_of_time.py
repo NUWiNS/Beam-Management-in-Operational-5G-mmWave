@@ -99,13 +99,13 @@ def data_to_bar(group_24, group_32, group_36, group_144, link_type, save_flag, s
             print(f"Group {label}: {outliers[label]}")
 
     if save_flag:
-        save_path = f'D:/git/plots/bar_fraction_of_time_{link_type.lower()}.pdf'
+        save_path = f'../plots/bar_fraction_of_time_{link_type.lower()}.pdf'
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
     if show_flag:
         plt.show()
     plt.close()
 
-loaded_data = load_data_from_pickle('D:/git/pkl/fraction_of_time.pkl')
+loaded_data = load_data_from_pickle('../pkl/fraction_of_time.pkl')
 
 dl_group_24, dl_group_32, dl_group_36, dl_group_144 = reorganize_data(loaded_data, 'Downlink')
 ul_group_24, ul_group_32, ul_group_36, ul_group_144 = reorganize_data(loaded_data, 'Uplink')

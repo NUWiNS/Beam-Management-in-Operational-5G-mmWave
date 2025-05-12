@@ -66,13 +66,13 @@ def data_to_box(group_24, group_32, group_36, group_144, link_type, save_flag, s
             print(f"Group {label}: {outliers[label]}")
 
     if save_flag:
-        plt.savefig(f'D:/git/plots/box_rsrp_diff_{link_type.lower()}.pdf',
+        plt.savefig(f'../plots/box_rsrp_diff_{link_type.lower()}.pdf',
                     bbox_inches='tight', dpi=300)
     if show_flag:
         plt.show()
     plt.close()
 
-loaded_data = load_data_from_pickle('D:/git/pkl/Beam_top_set.pkl')
+loaded_data = load_data_from_pickle('../pkl/Beam_top_set.pkl')
 
 save_flag = 1
 show_flag = 0

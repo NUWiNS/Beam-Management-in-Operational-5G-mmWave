@@ -65,7 +65,7 @@ def data_to_box(DL_W, DL_D, save_flag, show_flag):
 
     # Save the image
     if save_flag:
-        plt.savefig(f'D:/git/plots/box_drive_walk_sinr.pdf',
+        plt.savefig(f'../plots/box_drive_walk_sinr.pdf',
                     bbox_inches='tight', dpi=300)
 
     # Show the image
@@ -75,7 +75,7 @@ def data_to_box(DL_W, DL_D, save_flag, show_flag):
     plt.close()
 
 # Main program
-loaded_data = load_data_from_pickle('D:/git/pkl/drive_walk_sinr.pkl')
+loaded_data = load_data_from_pickle('../pkl/drive_walk_sinr.pkl')
 
 save_flag = 1
 show_flag = 0

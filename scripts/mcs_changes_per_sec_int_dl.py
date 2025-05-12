@@ -106,7 +106,7 @@ def data_to_box(group_24, group_32, group_36, group_144, link_type, save_flag, s
     
     # Save the image
     if save_flag:
-        plt.savefig(f'D:/git/plots/box_mcs_changes_per_sec_int_{link_type.lower()}.pdf', 
+        plt.savefig(f'../plots/box_mcs_changes_per_sec_int_{link_type.lower()}.pdf', 
                     bbox_inches='tight', dpi=300)
     
     # Show the image
@@ -115,7 +115,7 @@ def data_to_box(group_24, group_32, group_36, group_144, link_type, save_flag, s
     
     plt.close()
 
-loaded_data = load_data_from_pickle('D:/git/pkl/mcs_changes_per_sec_int.pkl')
+loaded_data = load_data_from_pickle('../pkl/mcs_changes_per_sec_int.pkl')
 
 dl_group_24, dl_group_32, dl_group_36, dl_group_144 = reorganize_data(loaded_data, 'Downlink')
 

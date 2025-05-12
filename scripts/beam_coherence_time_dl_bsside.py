@@ -88,7 +88,7 @@ def data_to_bar(group_24, group_32, group_36, group_144, link_type, side, save_f
     ax.axvline(x=3.5, color='black', linestyle='--')
 
     if save_flag:
-        save_path = f'D:/git/plots/bar_beam_coherence_time_{link_type.lower()}_{side.lower()}.pdf'
+        save_path = f'../plots/bar_beam_coherence_time_{link_type.lower()}_{side.lower()}.pdf'
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
     if show_flag:
         plt.show()
@@ -101,7 +101,7 @@ def get_ylim(side):
     }
     return ylim[side]
 
-loaded_data = load_data_from_pickle('D:/git/pkl/beam_coherence_time.pkl')
+loaded_data = load_data_from_pickle('../pkl/beam_coherence_time.pkl')
 
 dl_bs_group_24, dl_bs_group_32, dl_bs_group_36, dl_bs_group_144 = reorganize_data(loaded_data, 'Downlink', 'BSside')
 

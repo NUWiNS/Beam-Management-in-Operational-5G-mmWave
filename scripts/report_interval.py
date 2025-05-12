@@ -107,7 +107,7 @@ def data_to_box(group_24, group_32, group_36, group_144, link_type, save_flag, s
     
     if save_flag:
 
-        plt.savefig(f'D:/git/plots/box_report_interval_{link_type.lower()}.pdf', 
+        plt.savefig(f'../plots/box_report_interval_{link_type.lower()}.pdf', 
                     bbox_inches='tight', dpi=300)
     
     
@@ -116,7 +116,7 @@ def data_to_box(group_24, group_32, group_36, group_144, link_type, save_flag, s
     
     plt.close()
 
-loaded_data = load_data_from_pickle('D:/git/pkl/report_interval.pkl')
+loaded_data = load_data_from_pickle('../pkl/report_interval.pkl')
 
 dl_group_24, dl_group_32, dl_group_36, dl_group_144 = reorganize_data(loaded_data, 'Downlink')
 

@@ -78,7 +78,7 @@ def data_to_cdf(group, group_name, link_type, save_flag, show_flag, use_colors=F
     
     # Save the image
     if save_flag:
-        plt.savefig(f'D:/git/plots/cdf_pcell_rsrp_top_diff_{link_type.lower()}_{group_name}.pdf',
+        plt.savefig(f'../plots/cdf_pcell_rsrp_top_diff_{link_type.lower()}_{group_name}.pdf',
                     bbox_inches='tight', dpi=300)
     
     # Display the image  
@@ -86,7 +86,7 @@ def data_to_cdf(group, group_name, link_type, save_flag, show_flag, use_colors=F
         plt.show()
     plt.close()
 
-loaded_data = load_data_from_pickle('D:/git/pkl/rsrp_s_b_top_diff.pkl')
+loaded_data = load_data_from_pickle('../pkl/rsrp_s_b_top_diff.pkl')
 
 group_24_dl, group_32_dl, group_36_dl, group_144_dl = reorganize_data(loaded_data, 'Downlink')
 group_24_ul, group_32_ul, group_36_ul, group_144_ul = reorganize_data(loaded_data, 'Uplink')

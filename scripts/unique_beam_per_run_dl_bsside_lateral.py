@@ -81,13 +81,13 @@ def data_to_bar(group_24, group_32, group_36, group_144, link_type, save_flag, s
     # plt.title(f'{link_type}')
 
     if save_flag:
-        save_path = f'D:/git/plots/bar_unique_beam_{link_type.lower()}_bsside_lateral.pdf'
+        save_path = f'../plots/bar_unique_beam_{link_type.lower()}_bsside_lateral.pdf'
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
     if show_flag:
         plt.show()
     plt.close()
 
-loaded_data = load_data_from_pickle('D:/git/pkl/unique_beam_per_run_bsside.pkl')
+loaded_data = load_data_from_pickle('../pkl/unique_beam_per_run_bsside.pkl')
 
 dl_group_24, dl_group_32, dl_group_36, dl_group_144 = reorganize_data(loaded_data, 'Downlink')
 

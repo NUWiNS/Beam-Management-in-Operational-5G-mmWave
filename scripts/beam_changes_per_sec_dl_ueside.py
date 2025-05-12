@@ -112,14 +112,14 @@ def data_to_bar_ue(group_24_ue, group_24_ue_without_bs,
     # ax.set_title(f'{link_type} {side} - Beam Changes per Second')
 
     if save_flag:
-        save_path = f'D:/git/plots/bar_beam_changes_per_sec_{link_type.lower()}_{side.lower()}.pdf'
+        save_path = f'../plots/bar_beam_changes_per_sec_{link_type.lower()}_{side.lower()}.pdf'
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
     if show_flag:
         plt.show()
     plt.close()
 
 
-loaded_data = load_data_from_pickle('D:/git/pkl/beam_changes_per_sec.pkl')
+loaded_data = load_data_from_pickle('../pkl/beam_changes_per_sec.pkl')
 
 dl_ue_group_24, dl_ue_group_32, dl_ue_group_36, dl_ue_group_144 = reorganize_data(loaded_data, 'Downlink', 'UEside')
 dl_ue_group_24_without_bs, dl_ue_group_32_without_bs, dl_ue_group_36_without_bs, dl_ue_group_144_without_bs = reorganize_data(loaded_data, 'Downlink', 'UE_switch_without_BS_switch')

@@ -123,7 +123,7 @@ def data_to_box(s21_walk, s21_drive, s24_walk, s24_drive, save_flag, show_flag, 
 
     # Save figure
     if save_flag:
-        plt.savefig(f'D:/git/plots/box_s21_s24_beam_changes_per_sec_{side.lower()}_dl.pdf',
+        plt.savefig(f'../plots/box_s21_s24_beam_changes_per_sec_{side.lower()}_dl.pdf',
                     bbox_inches='tight', dpi=300)
 
     # Show figure
@@ -133,8 +133,8 @@ def data_to_box(s21_walk, s21_drive, s24_walk, s24_drive, save_flag, show_flag, 
     plt.close()
 
 # Main program
-loaded_walk_data = load_data_from_pickle('D:/git/pkl/s21_s24_walk_beam_changes_per_sec.pkl')
-loaded_drive_data = load_data_from_pickle('D:/git/pkl/s21_s24_drive_beam_changes_per_sec_30S.pkl')
+loaded_walk_data = load_data_from_pickle('../pkl/s21_s24_walk_beam_changes_per_sec.pkl')
+loaded_drive_data = load_data_from_pickle('../pkl/s21_s24_drive_beam_changes_per_sec_30S.pkl')
 
 save_flag = 1
 show_flag = 0

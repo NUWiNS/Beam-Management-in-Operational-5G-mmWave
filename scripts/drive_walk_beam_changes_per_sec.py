@@ -80,7 +80,7 @@ def data_to_box(DL_W, UL_W, DL_D, UL_D, side, save_flag, show_flag):
 
     # Save the image
     if save_flag:
-        plt.savefig(f'D:/git/plots/box_drive_walk_beam_changes_per_sec_{side.lower()}_full.pdf',
+        plt.savefig(f'../plots/box_drive_walk_beam_changes_per_sec_{side.lower()}_full.pdf',
                     bbox_inches='tight', dpi=300)
 
     # Show the image
@@ -90,7 +90,7 @@ def data_to_box(DL_W, UL_W, DL_D, UL_D, side, save_flag, show_flag):
     plt.close()
 
 # Main program
-loaded_data = load_data_from_pickle('D:/git/pkl/drive_walk_beam_changes_per_sec_30S_full.pkl')
+loaded_data = load_data_from_pickle('../pkl/drive_walk_beam_changes_per_sec_30S_full.pkl')
 
 save_flag = 1
 show_flag = 0

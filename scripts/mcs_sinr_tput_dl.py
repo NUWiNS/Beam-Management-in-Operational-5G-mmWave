@@ -6,7 +6,7 @@ import os
 
 def load_data(graph_type):
     # Load data from a pickle file based on the graph type
-    with open(f'D:/git/pkl/{graph_type}.pkl', 'rb') as f:
+    with open(f'../pkl/{graph_type}.pkl', 'rb') as f:
         return pickle.load(f)
     
 def flatten_list(nested_list):
@@ -97,7 +97,7 @@ def plot_box(group_24, group_32, group_36, group_144, graph_type, link_type, sav
             print(f"Group {label}: {outliers[label]}")
 
     if save_flag:
-        plt.savefig(f'D:/git/plots/box_{graph_type}_{link_type.lower()}.pdf', 
+        plt.savefig(f'../plots/box_{graph_type}_{link_type.lower()}.pdf', 
                     bbox_inches='tight', dpi=300)
     if show_flag:
         plt.show()

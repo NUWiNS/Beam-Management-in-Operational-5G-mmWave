@@ -122,7 +122,7 @@ Each script in `scripts/` is self-contained and easy to modify:
 ## Citation
 
 If you use this artifact in your own work, please cite our paper
-
+https://dl.acm.org/doi/abs/10.1145/3730982
 ---
 
 ## Contact
